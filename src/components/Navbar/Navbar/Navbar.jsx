@@ -18,18 +18,18 @@ const Navbar = () => {
         <div className='flex flex-row lg:flex justify-between items-center gap-4'>
           <IoMenu
             onClick={() => setMenu(true)}
-            className='text-3xl lg:hidden'
+            className='lg:text-3xl text-2xl lg:hidden'
           />
-          <IoIosSearch className='text-3xl lg:hidden' />
+          <IoIosSearch className='lg:text-3xl text-2xl lg:hidden' />
           <CiLocationOn className=' lg:flex hidden text-xl font-bold' />
           <h1 className='lg:flex justify-end text-sm hidden '>FIND STORE</h1>
         </div>
         <div className=''>
-          <h1 className='text-2xl text-center font-bold'>
+          <h1 className='lg:text-2xl text-xl text-center font-bold'>
             Techology<span className='text-[#ff4865]'>BD</span>
           </h1>
         </div>
-        <div className='flex flex-row text-3xl gap-4'>
+        <div className='flex flex-row justify-center items-center text-2xl lg:text-3xl gap-4'>
           <FaRegUser />
           <IoCartOutline />
         </div>
@@ -42,7 +42,7 @@ const Navbar = () => {
           <section className='text-black bg-white flex-col absolute left-0 top-0 h-screen p-8 gap-6 z-50 flex'>
             <IoCloseOutline
               onClick={() => setMenu(false)}
-              className='text-3xl mt-0 mb-8 cursor-pointer w-56'
+              className='text-3xl  mt-0 mb-8 cursor-pointer w-56'
             />
 
             <Link className='font-bold' href={"/"}>
